@@ -41,8 +41,8 @@ const about = () => {
                 <div className="text">
                     <div className="about-div">
                     <p>
-                     I have a curosity to learn and implement new things and technologies. I love coding. I am an enthusiastic , responsible and a passionate person. I am a focused and hardworking professional. I am a reflexive and energetic person. I learn new skills and try to apply them. I have keen interest in Web Development. I am a self-learner, who puts google to good use 😁. <br/>
-                     I handle TCE Quiz club's the Quizzards OF TCE blog. (https://quizzardsoftce.blogspot.com/). <br/> When I am not working I usually spend my time listening to music or reading a book. I like MCU and Star wars. 
+                     I have a curiosity to learn and implement new things and technologies. I love coding. I am an enthusiastic, responsible, and passionate person and a hardworking professional. I am a reflexive and energetic person. I learn new skills and try to apply them. I have a keen interest in Web Development. I am a self-learner, who puts google to good use. <br/>
+                     I handle the TCE Quiz club's the Quizzards OF TCE blog. (https://quizzardsoftce.blogspot.com/). <br/> When I am not working I usually spend my time listening to music or reading a book. I like MCU and Star Wars. 
                     </p>
                     </div>
                 </div>
