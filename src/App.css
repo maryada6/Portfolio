@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(162, 61%, 89%);
+  --clr-primary-2: hsl(162, 60%, 78%);
+  --clr-primary-3: hsl(162, 61%, 67%);
+  --clr-primary-4: hsl(162, 61%, 57%);
+  /* primary/main color */
+  --clr-primary-5: hsl(162, 73%, 46%);
+  /* lighter shades of primary color */
+  --clr-primary-6: #1aa179;
+  --clr-primary-7: #13795b;
+  --clr-primary-8: #0d503c;
+  --clr-primary-9: #06281e;
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(212, 33%, 89%);
+  --clr-grey-2: hsl(210, 31%, 80%);
+  --clr-grey-3: hsl(211, 27%, 70%);
+  --clr-grey-4: hsl(209, 23%, 60%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 28%, 39%);
+  --clr-grey-7: hsl(209, 34%, 30%);
+  --clr-grey-8: hsl(211, 39%, 23%);
+  --clr-grey-9: hsl(209, 61%, 16%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+  --clr-pink: #f28ab2;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+* {
+  font-size: 16px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--clr-black);
+  color: white;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow: hidden !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+y ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*  global classes */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #5d4954;
+}
+
+.logo h4 {
+  color: rgb(230, 225, 225);
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+}
+
+.nav-links a {
+  color: rgb(230, 225, 225);
+  text-decoration: none;
+  letter-spacing: 0.02rem;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(230, 225, 225);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  height: auto;
+  padding: 10px;
+}
+
+.height-add {
+  height: 90vh;
+  margin-top: 20px;
+}
+
+.profile {
+  border-radius: 100%;
+  margin: 3vw;
+  max-width: 20vw;
+}
+
+.about-img {
+  border-radius: 10%;
+  margin: 3vw;
+  max-width: 30vw;
+  border-radius: 1px solid lightpinkx;
+}
+
+.about-img-div {
+  flex: 0 1 300px;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.img-div {
+  flex: 0 1 200px;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.intro-div {
+  flex: 1 1 300px; /*  No stretching: */
+  margin: 5px;
+  text-align: center;
+}
+
+.text {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-width: 350px;
+}
+
+.space {
+  height: 10vh;
+  border-bottom: #222;
+}
+
+.about-div {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid red;
+  background: lightpink;
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+  width: 50vw;
+  font-family: "Newsreader", serif;
+  font-weight: 700;
+}
+
+.color-intro {
+  color: lightgreen !important;
+}
+
+.intro {
+  color: white;
+  font-size: 5vw;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1rem;
+  margin: 0.4rem;
+  text-align: left;
+}
+
+.intro-low {
+  color: white;
+  font-size: 2vw;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1rem;
+  margin: 0.4rem;
+  text-align: left;
+}
+
+.intro-btn {
+  background-color: lightgreen;
+  color: #5d4954;
+  font-size: 2vw;
+  border-radius: 5px;
+  padding: 0.4vw;
+}
+
+.heading {
+  font-size: 4vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Spectral", serif;
+  margin: 20px;
+  text-decoration: underline #5d4954;
+  text-underline-position: under;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  flex: 0 1 40vw; /*  No stretching: */
+  margin: 15px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Merienda", cursive;
+}
+
+.intro-btn :hover {
+  text-decoration: none;
+}
+
+.intro-btn:link {
+  text-decoration: none;
+}
+
+.intro-btn:visited {
+  text-decoration: none;
+}
+
+.intro-btn:hover {
+  text-decoration: none;
+}
+
+.intro-btn:active {
+  text-decoration: none;
+}
+
+.project-div {
+  color: white;
+  text-align: left;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  min-width: 300px;
+}
+
+.project-div h1 {
+  padding: 3px;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-div-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 250px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.subheading {
+  font-size: 2vw;
+  color: lightgreen;
+}
+
+.project-div-skills-sub {
+  flex: 0 1 18px; /*  No stretching: */
+  margin: 2px;
+  list-style-type: none;
+  padding: 2px;
+  border: 1px solid black;
+  color: black;
+  background-color: rgb(157, 231, 157);
+  border-radius: 5px;
+}
+
+.edu-contain {
+  display: grid;
+  place-items: center;
+}
+
+.school {
+  text-align: left;
+  width: 40vw;
+  margin: 10px 0;
+}
+
+.school-info {
+  padding-left: 5vw;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+.blog {
+  text-align: center;
+  font-size: 2vw;
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: lightskyblue;
+}
+.contact {
+  display: grid;
+  place-items: center;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.contact-links {
+  margin: 10px;
+}
+
+.contact-links a {
+  color: white;
+  margin: 5px;
+}
+
+.contact-icon {
+  font-size: 3vw;
+}
+
+.left {
+  align-items: left;
+  font-size: 2vw;
+}
+
+footer {
+  text-align: center;
+  margin: 4px;
+  background-color: #5d4954;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .about-div {
+    width: 80vw;
+  }
+  .blog {
+    width: 80vw;
+  }
+  .nav-links {
+    z-index: 9999;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .anime .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px) !important;
+  }
+  .anime .line2 {
+    opacity: 0 !important;
+  }
+  .anime .line3 {
+    transform: rotate(45deg) translate(-5px, -6px) !important;
+  }
+
+  .intro {
+    font-size: 8vw;
+  }
+  .intro-low {
+    font-size: 4vw;
+  }
+
+  .intro-btn {
+    font-size: 5vw !important;
+  }
+
+  .profile {
+    max-width: 40vw !important;
+  }
+
+  .space {
+    height: 12vh;
+  }
+
+  .about-img-div {
+    display: none;
+  }
+
+  .about-container {
+    height: auto;
+  }
+
+  .height-add {
+    min-height: 75vh;
+  }
+
+  .project-div {
+    width: 90vw;
+  }
+
+  .school {
+    width: 80vw;
+  }
+
+  .edu-img {
+    display: grid;
+  }
+  .skill {
+    flex: 0 1 80vw;
+  }
+
+  .contact-icon {
+    font-size: 6vw;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
