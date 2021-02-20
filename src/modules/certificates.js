@@ -11,8 +11,11 @@ const certificates = () => {
                     const {name,link,institution}=certificate;
                     return(
                         <div key={index} className="skill blog">
-                        <h2>{name} <a href={link} className="link"><BiLinkExternal/></a></h2>
+                        <h2>{name}</h2>
                         <h2>{institution}</h2>
+                        <div className="links-flex">
+                             <a href={link} className="link"><BiLinkExternal/></a>
+                        </div>
                         </div>
                     )
                 })

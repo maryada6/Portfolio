@@ -49,6 +49,7 @@ Variables
   --max-width: 1170px;
   --fixed-width: 450px;
   --clr-pink: #f28ab2;
+  --clr-browny: #5d4954;
 }
 /*
 =============== 
@@ -72,21 +73,19 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-black);
-  color: white;
+  color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;
   overflow: hidden !important;
+  overflow-x: hidden;
+  position: relative;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
 }
 
-body {
-  position: relative;
-}
-y ul {
+ul {
   list-style-type: none;
 }
 a {
@@ -101,7 +100,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   font-family: "Poppins", sans-serif;
-  background-color: #5d4954;
+  background-color: var(--clr-browny);
 }
 
 .logo h4 {
@@ -173,7 +172,6 @@ nav {
   border-radius: 10%;
   margin: 3vw;
   max-width: 30vw;
-  border-radius: 1px solid lightpinkx;
 }
 
 .about-img-div {
@@ -205,28 +203,28 @@ nav {
 
 .space {
   height: 10vh;
-  border-bottom: #222;
 }
 
 .about-div {
   padding: 0.5rem;
   border-radius: 10px;
-  border: 1px solid red;
+  border: 1px solid var(--clr-red-dark);
   background: lightpink;
-  color: black;
+  color: var(--clr-black);
   font-size: 2rem;
   text-align: left;
   width: 50vw;
   font-family: "Newsreader", serif;
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 .color-intro {
-  color: lightgreen !important;
+  color: var(--clr-green-light) !important;
 }
 
 .intro {
-  color: white;
+  color: var(--clr-white);
   font-size: 5vw;
   font-family: "Roboto", sans-serif;
   padding-top: 1rem;
@@ -235,7 +233,7 @@ nav {
 }
 
 .intro-low {
-  color: white;
+  color: var(--clr-white);
   font-size: 2vw;
   font-family: "Roboto", sans-serif;
   padding-top: 1rem;
@@ -244,8 +242,8 @@ nav {
 }
 
 .intro-btn {
-  background-color: lightgreen;
-  color: #5d4954;
+  background-color: var(--clr-green-light);
+  color: var(--clr-browny);
   font-size: 2vw;
   border-radius: 5px;
   padding: 0.4vw;
@@ -257,7 +255,7 @@ nav {
   text-align: center;
   font-family: "Spectral", serif;
   margin: 20px;
-  text-decoration: underline #5d4954;
+  text-decoration: underline var(--clr-browny);
   text-underline-position: under;
 }
 
@@ -270,7 +268,7 @@ nav {
 .skill {
   flex: 0 1 40vw; /*  No stretching: */
   margin: 15px;
-  border: 1px solid white;
+  border: 1px solid var(--clr-white);
   padding: 10px;
   border-radius: 5px;
   font-family: "Merienda", cursive;
@@ -297,11 +295,11 @@ nav {
 }
 
 .project-div {
-  color: white;
+  color: var(--clr-white);
   text-align: left;
   display: grid;
   place-items: center;
-  border: 1px solid white;
+  border: 1px solid var(--clr-white);
   padding: 5px;
   margin: 5px;
   min-width: 300px;
@@ -323,7 +321,7 @@ nav {
 
 .subheading {
   font-size: 2vw;
-  color: lightgreen;
+  color: var(--clr-green-light);
 }
 
 .project-div-skills-sub {
@@ -331,10 +329,18 @@ nav {
   margin: 2px;
   list-style-type: none;
   padding: 2px;
-  border: 1px solid black;
-  color: black;
-  background-color: rgb(157, 231, 157);
+  border: 1px solid var(--clr-black);
+  color: var(--clr-black);
+  background-color: var(--clr-green-light);
   border-radius: 5px;
+}
+
+.links-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  width: 100%;
+  color: var(--clr-primary-3);
 }
 
 .edu-contain {
@@ -362,7 +368,8 @@ nav {
 }
 
 .link {
-  color: lightskyblue;
+  color: var(--clr-primary-3);
+  margin: 3px;
 }
 .contact {
   display: grid;
@@ -376,7 +383,7 @@ nav {
 }
 
 .contact-links a {
-  color: white;
+  color: var(--clr-white);
   margin: 5px;
 }
 
@@ -392,7 +399,7 @@ nav {
 footer {
   text-align: center;
   margin: 4px;
-  background-color: #5d4954;
+  background-color: var(--clr-browny);
 }
 
 @media screen and (max-width: 800px) {
@@ -411,7 +418,7 @@ footer {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954;
+    background-color: var(--clr-browny);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,7 +491,7 @@ footer {
   }
 
   .contact-icon {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 

@@ -6,7 +6,7 @@ import achieve from "./photos/achieve.png"
 const accomplishments = () => {
     return (
         <div id="achievements">
-            <p className="intro-low heading" id="projects">
+            <p className="intro-low heading">
                      Accomplishments
                     </p>
 
@@ -24,8 +24,11 @@ const accomplishments = () => {
                     return (
                         
                         <div key={index} className="skill blog">
-                            <h1>{topic}   <a className="link" key={index} href={link}><BiLinkExternal/></a></h1>
+                            <h1>{topic}</h1>
                             <h2>About: {describe}</h2> 
+                        <div className="links-flex">
+                             <a className="link" key={index} href={link}><BiLinkExternal/></a>
+                        </div>
                         </div>
                     )
                 })

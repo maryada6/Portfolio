@@ -1,19 +1,20 @@
 const projectsData=[{
     title:"My Portfolio(this)", img:"/photos/portfolio.png",
-    link:"#",skills:["react.js","HTML","CSS","Bootstrap","Javascript"]
+    link:"#",skills:["react.js","HTML","CSS","Bootstrap","Javascript"],git:"https://github.com/maryada6/Portfolio"
+
 },
 {
     title:"Weather app", img:"/photos/weather.png",
-    link:"https://mk-weather-app.netlify.app/",skills:["react.js","HTML","CSS","Javascript","API"]
+    link:"https://mk-weather-app.netlify.app/",skills:["react.js","HTML","CSS","Javascript","API"],git:"https://github.com/maryada6/weather-app"
 },
 {
     title:"Color Picker", img:"/photos/color.png",
-    link:"https://mk-color-generator-app-9.netlify.app/",skills:["react.js","HTML","CSS","Javascript","API"]
+    link:"https://mk-color-generator-app-9.netlify.app/",skills:["react.js","HTML","CSS","Javascript","API"],git:"https://github.com/maryada6/react-mini-projects/tree/main/9-color-generator/setup"
 },
 {
     title:"Todo List", img:"/photos/todo.png",
     link:"https://todo-list-maryada.netlify.app/",
-    skills:["react.js","HTML","CSS","Javascript"]
+    skills:["react.js","HTML","CSS","Javascript"],git:"https://github.com/maryada6/todo-list"
 }]
 
 const skillsData=["Javascript","html","CSS","Sass","Bootstrap","React.js","Git","Responsive Web Design","C","Java","Python","Vanilla.js"]

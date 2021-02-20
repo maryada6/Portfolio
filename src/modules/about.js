@@ -8,8 +8,6 @@ import {AiOutlineInstagram} from 'react-icons/ai'
 const about = () => {
     return (
         <div  id="home" className="about">
-            <div className="space">
-            </div>
             <div className="about-container height-add">
                 <div className="img-div">
                      <img src={photo} alt="profile"  className="profile"/>

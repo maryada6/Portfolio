@@ -14,8 +14,8 @@ const footer = () => {
                     </p>
             <div className="contact"> 
             <div className="left">     
-            <h2><AiOutlineMail  style={{fontSize:"20px"}}/>: maryada@student.tce.edu</h2>
-            <h2><AiOutlinePhone  style={{fontSize:"20px"}}/>: 9080532800</h2>
+            <h2><AiOutlineMail  style={{fontSize:"20px"}}/>: <span>maryada@student.tce.edu</span></h2>
+            <h2><AiOutlinePhone  style={{fontSize:"20px"}}/>: <span>9080532800</span></h2>
             </div>
             <div className="contact-links">
             <a href="https://www.linkedin.com/in/maryada-kumar-lodha-d-a86285190"><AiOutlineLinkedin className="contact-icon" /></a>
