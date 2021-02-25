@@ -5,6 +5,7 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 import {AiFillGithub} from 'react-icons/ai'
 import {AiOutlineFacebook} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import ContactForm from './email';
 const footer = () => {
     return (
         <div id="contact">
@@ -12,6 +13,11 @@ const footer = () => {
                  <p className="intro-low heading">
                       Contact
                     </p>
+                <p className="intro-low heading">
+                      Get in touch
+                    </p>
+
+            <ContactForm/>
             <div className="contact"> 
             <div className="left">     
             <h2><AiOutlineMail  style={{fontSize:"20px"}}/>: <span>maryada@student.tce.edu</span></h2>

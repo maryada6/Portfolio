@@ -50,6 +50,11 @@ Variables
   --fixed-width: 450px;
   --clr-pink: #f28ab2;
   --clr-browny: #5d4954;
+
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
 }
 /*
 =============== 
@@ -497,4 +502,69 @@ footer {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+.input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+textarea.input {
+  resize: vertical;
+  height: 5rem;
+}
+
+.input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+}
+
+.input {
+  /* ...existing styles */
+  transition: 180ms box-shadow ease-in-out;
+}
+
+.input:focus {
+  outline: 3px solid transparent;
+}
+
+.contain-input {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  align-items: center;
+
+  /* grid-template-areas:
+    ".email .email-input "
+    ".name .name-input "
+    ".subject .subject-input "
+    ".message .message-input "; */
+}
+
+.email-button {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--clr-green-dark);
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.email-button-holder {
+  text-align: center;
+}
+label {
+  font-family: "Poppins", sans-serif;
 }
