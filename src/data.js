@@ -17,7 +17,7 @@ const projectsData=[{
     skills:["react.js","HTML","CSS","Javascript"],git:"https://github.com/maryada6/todo-list"
 },{
     title:"High School Gallery", img:"/photos/gallery.png",
-    link:"https://maryada6.github.io/gallery/#",skills:["react.js","HTML","CSS","Javascript"],git:"https://github.com/maryada6/gallery"
+    link:"https://maryada6.github.io/gallery/#",skills:["HTML","CSS","Javascript"],git:"https://github.com/maryada6/gallery"
 
 }]
 
