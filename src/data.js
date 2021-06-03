@@ -15,6 +15,10 @@ const projectsData=[{
     title:"Todo List", img:"/photos/todo.png",
     link:"https://todo-list-maryada.netlify.app/",
     skills:["react.js","HTML","CSS","Javascript"],git:"https://github.com/maryada6/todo-list"
+},{
+    title:"High School Gallery", img:"/photos/gallery.png",
+    link:"https://maryada6.github.io/gallery/#",skills:["react.js","HTML","CSS","Javascript"],git:"https://github.com/maryada6/gallery"
+
 }]
 
 const skillsData=["Javascript","html","CSS","Sass","Bootstrap","React.js","Git","Responsive Web Design","C","Java","Python","Vanilla.js"]
