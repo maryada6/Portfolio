@@ -3,7 +3,6 @@ import photo from "./photos/profile.png";
 import me from "./photos/about.png";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 const about = () => {
   return (
@@ -18,10 +17,7 @@ const about = () => {
             <a href="https://github.com/maryada6">
               <AiFillGithub className="contact-icon" />
             </a>
-            <a href="https://www.facebook.com/maryadalodha6/">
-              <AiOutlineFacebook className="contact-icon" />
-            </a>
-            <a href="https://www.instagram.com/maryada_2121/">
+            <a href="https://www.instagram.com/jainsubhamd/">
               <AiOutlineInstagram className="contact-icon" />
             </a>
           </div>
