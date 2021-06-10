@@ -1,4 +1,5 @@
-import './App.css';
+import './App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from "./modules/header" 
 import About from "./modules/about"
 import Projects from "./modules/projects"
@@ -11,15 +12,39 @@ import Footer from "./modules/footer"
 function App() {
   return (
     <>
+    <Router>
     <Header/>
-    <About/>
+      <Switch>
+        <Route exact path="/">
+          <About/>
+        </Route>
+        <Route exact path="/about">
+          <About/>
+        </Route>
+        <Route exact path="/projects">
+        <Projects/>
+        </Route>
+        <Route exact path="/education">
+        <Education/>
+        </Route>
+        <Route exact path="/skills">
+        <Skills/>
+        <Work/>
+        <Accomplishments/>
+        <Certificates/>
+        </Route>
+        </Switch>
+        <Footer/>
+    </Router>
+   
+    {/* <About/>
     <Projects/>
     <Education/>
     <Skills/>
     <Work/>
     <Accomplishments/>
     <Certificates/>
-    <Footer/>
+    <Footer/> */}
    </>
   );
 }

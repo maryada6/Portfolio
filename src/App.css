@@ -90,11 +90,27 @@ html {
   overflow-x: hidden;
 }
 
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 /*  global classes */
@@ -156,7 +172,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   min-height: 50vh;
   height: auto;
   padding: 10px;
@@ -307,7 +323,8 @@ nav {
   border: 1px solid var(--clr-white);
   padding: 5px;
   margin: 5px;
-  min-width: 300px;
+  width: 30vw;
+  height: 80vh;
 }
 
 .project-div h1 {
@@ -319,7 +336,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 250px;
+  width: 95%;
   padding: 5px;
   margin: 5px;
 }
@@ -330,7 +347,6 @@ nav {
 }
 
 .project-div-skills-sub {
-  flex: 0 1 18px; /*  No stretching: */
   margin: 2px;
   list-style-type: none;
   padding: 2px;
@@ -373,9 +389,21 @@ nav {
 }
 
 .link {
-  color: var(--clr-primary-3);
+  color: black;
   margin: 3px;
 }
+
+.contact-space{
+  margin:30px auto 10px auto;
+}
+
+.contact-title{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .contact {
   display: grid;
   place-items: center;
@@ -482,6 +510,7 @@ footer {
 
   .project-div {
     width: 90vw;
+    height: auto;
   }
 
   .school {

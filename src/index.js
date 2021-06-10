@@ -22,14 +22,19 @@ const navSlide=()=>{
     navLinks.forEach((navLink,index)=>{
     if( navLink.style.animation){
      navLink.style.animation='';
+     
    } 
    else{
      navLink.style.animation=`navLinkFade 0.5s ease forwards ${index/7 + .4}s`
+    
    }
   })
   })
 }
 navSlide();
+
+
+
 
 
 // If you want to start measuring performance in your app, pass a function
