@@ -53,9 +53,9 @@ const projectsData = [
   {
     title: "High School Gallery",
     img: "/photos/gallery.png",
-    link: "",
+    link: "https://memories-of-batch19.netlify.app/",
     skills: ["HTML", "react.js", "react-router", "CSS", "Javascript"],
-    git: "",
+    git: "https://memories-of-batch19.netlify.app/",
   },
 ];
 
