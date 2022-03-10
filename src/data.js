@@ -81,7 +81,7 @@ const educationData = [
     field: "Computer science  and engineering",
     start: 2019,
     end: 2023,
-    grade: "9.8 CGPA",
+    grade: "9.75 CGPA",
     description: "",
   },
   {
