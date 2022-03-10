@@ -17,7 +17,7 @@ const about = () => {
             <a href="https://github.com/maryada6">
               <AiFillGithub className="contact-icon" />
             </a>
-            <a href="https://www.instagram.com/jainsubhamd/">
+            <a href="https://www.instagram.com/maryada_2121/">
               <AiOutlineInstagram className="contact-icon" />
             </a>
           </div>
