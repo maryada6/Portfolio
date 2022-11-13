@@ -81,7 +81,7 @@ const educationData = [
     field: "Computer science  and engineering",
     start: 2019,
     end: 2023,
-    grade: "9.75 CGPA",
+    grade: "9.62 CGPA",
     description: "",
   },
   {
@@ -150,6 +150,13 @@ const workData = [
     end: "Present",
     description: "Quizzard Blogger at https://quizzardsoftce.blogspot.com",
   },
+  {
+    Organisation: "ShopUp",
+    role: "SDE-1 intern",
+    start: "August 2022",
+    end: "September 2022",
+    description: "Intership covered TDD and good coding conventions",
+  }
 ];
 
 const accomplishmentsData = [
